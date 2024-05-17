@@ -1,0 +1,24 @@
+index.html
+
+<button id="troca_cor">
+	Clique para trocar cor
+</button>
+
+<script>var btn = document.querySelector("#troca_cor");
+
+btn.addEventListener("click", trocarCor);
+
+let Preto = false;
+
+function trocarCor() {
+    switch (Preto) {
+        case false:
+            document.body.style.backgroundColor = "black";
+            Preto = true;
+            break;
+        case true:
+            document.body.style.backgroundColor = "white";
+            Preto = false;
+            break;
+    }
+  }</script>
